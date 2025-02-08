@@ -1,10 +1,11 @@
 # Google Form to RabbitSign
 
-A Google Apps Script that triggers when a Google Form is submitted, fills in a RabbitSign template, and sends the document out for signature.
+Use [Apps Script](https://developers.google.com/apps-script) to fill and send a [RabbitSign document](https://www.rabbitsign.com/faq.html#templates) whenever a Google Form is submitted.
 
 [Try it out now!](https://docs.google.com/forms/d/e/1FAIpQLSdRA_m0kYRXReUqKgqyRg-4TF9m3PDkR6jEJLbLIUoBw8ZLdg/viewform?usp=header)
 
-Use [Google Apps Script](https://developers.google.com/apps-script) to automatically fill and send a [RabbitSign templated document](https://www.rabbitsign.com/faq.html#templates) based on responses submitted to a Google Form.
+![A side-by-side image showing a filled Google Form on the left and the generated, filled-up form on the right with matching form details.](https://raw.githubusercontent.com/scottleechua/googleform-to-rabbitsign/main/assets/header.jpeg)
+
 
 ## Requirements
 1. The template ID, sender field names, and recipient's role name of a RabbitSign template.
