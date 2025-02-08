@@ -33,13 +33,10 @@ replacing `<APIKEYID>` and `<APIKEYSECRET>` with your actual credentials.
 ```
 remembering to add a comma after the previous argument.
 5. Copy in `main.gs`, `utils.gs` from this repo.
-6. Go to Triggers (the alarm clock in the left-hand side menu) and Add Trigger:
-    - which function to run: `onSubmit`
-    - which deployment should run: `Head`
-    - event source: `From form`
-    - event type: `On form submit`
+6. Go to Triggers (the alarm clock in the left-hand side menu) and Add Trigger. Edit the following:
+    - Select event type: `On form submit`
     - Failure notification settings: `Immediately`
-Saving the Trigger should, in turn, trigger an authentication flow to grant the project the necessary permissions.
+and leave the rest at their default values. Saving the Trigger should, in turn, trigger an authentication flow to grant the project the necessary permissions.
 
 ### B. Customize `main.gs`
 1. Update lines 2-4 with details of the Secret you stored in Google Cloud Secret Manager.
