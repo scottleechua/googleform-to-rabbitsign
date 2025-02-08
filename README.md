@@ -2,6 +2,8 @@
 
 A Google Apps Script that triggers when a Google Form is submitted, fills in a RabbitSign template, and sends the document out for signature.
 
+[Try it out now!](https://docs.google.com/forms/d/e/1FAIpQLSdRA_m0kYRXReUqKgqyRg-4TF9m3PDkR6jEJLbLIUoBw8ZLdg/viewform?usp=header)
+
 Use [Google Apps Script](https://developers.google.com/apps-script) to automatically fill and send a [RabbitSign templated document](https://www.rabbitsign.com/faq.html#templates) based on responses submitted to a Google Form.
 
 ## Requirements
@@ -36,11 +38,14 @@ Saving the Trigger should, in turn, trigger an authentication flow to grant the 
 7. All done! Submit the Google Form with a test response and use Apps Script's Execution log to check error messages if needed.
 
 ## Pricing
-- [RabbitSign](https://www.rabbitsign.com/developer.html): While the RabbitSign API is currently in public beta and therefore free, the official free tier is 100 "folders" (documents) / month, and 0.10 USD / folder thereafter.
-- [Google Cloud Secret Manager](https://cloud.google.com/security/products/secret-manager?hl=en#pricing): the [Google Cloud Free Tier](https://cloud.google.com/free/docs/free-cloud-features#secret-manager) covers up to 6 secret versions and 10k access operations / month.
 - Google Forms & Apps Script: free.
+- RabbitSign: Free while in public beta; refer to the [Developer Page](https://www.rabbitsign.com/developer.html) for updated pricing.
+- Secret Manager: Up to 6 active secrets and 10k access operations free per month under the [Google Cloud Free Tier](https://cloud.google.com/free/docs/free-cloud-features#secret-manager).
 
 ## Acknowledgements
 - The `onSubmit` function is adapted from Eyal Gershon's code in [Sending a Webhook for each Google Forms Submission](https://medium.com/@eyalgershon/sending-a-webhook-for-each-google-forms-submission-a0e73f72b397).
 - The `toHexUpper` function is due to Bergi's mind-boggling code snippet on [this StackOverflow thread](https://stackoverflow.com/questions/34309988/byte-array-to-hex-string-conversion-in-javascript).
 - Thanks to Amit Agarwal for teaching me [How to Access Secrets from Google Secret Manager using Apps Script](https://www.labnol.org/google-secret-manager-240330).
+
+## Contribute
+For bug reports or features, please open an issue before making a pull request.
