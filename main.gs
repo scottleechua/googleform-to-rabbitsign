@@ -37,15 +37,15 @@ function onSubmit(e) {
   const rabbitsignFields = {};
 
   // Assign Google Form answers to RabbitSign fields. For example:
-  rabbitsignFields["name"] = googleFormAnswers["Name"];
-  rabbitsignFields["id-number"] = googleFormAnswers["ID number"];
+  rabbitsignFields["name"] = googleFormAnswers["Name"]; // text field
+  rabbitsignFields["checkbox"] = googleFormAnswers["Select Yes or No"] === "Yes" ? "true" : "false"; // checkbox field
+  rabbitsignFields["date-today"] = "true"; // date field
+  rabbitsignFields["sender-signature"] = "Firstname Lastname"; // sender's signature field
 
-  const recipientRole = {
-    `${RECIPIENT_ROLE_NAME}`: {
-      // Assign the correct name and email fields here as well:
-      "name": recipientName,
-      "email": recipientEmail
-    }
+  const recipientRole = {};
+  recipientRole[RECIPIENT_ROLE_NAME] = {
+    "name": recipientName,
+    "email": recipientEmail
   };
 
   const payload = {};
