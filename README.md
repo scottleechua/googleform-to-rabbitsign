@@ -9,6 +9,7 @@ Use [Apps Script](https://developers.google.com/apps-script) to fill and send a 
 You can examine the Apps Script code that powers this demo [here](/demo.gs).
 
 ## Requirements
+
 1. A completed [RabbitSign document template](https://www.rabbitsign.com/faq.html#templates). Note down the **sender field names**, **recipient's role name**, and the **template ID**.
 2. A Google Form that collects the information to be injected into the RabbitSign document (at minimum, the **recipient's name and email address**).
 3. [RabbitSign API credentials](https://www.rabbitsign.com/developer.html) stored in [Google Cloud Secret Manager](https://cloud.google.com/security/products/secret-manager) in the format:
@@ -19,6 +20,11 @@ You can examine the Apps Script code that powers this demo [here](/demo.gs).
 replacing `<APIKEYID>` and `<APIKEYSECRET>` with your actual credentials.
 
 ## Instructions
+
+For a complete walkthrough, [**read this blog post.**](https://scottleechua.com/blog/googleform-to-rabbitsign/)
+
+<details>
+<summary>For the basic steps, click here.</summary>
 
 ### A. Setup Apps Script
 1. From your Google Form, click the 3-dots icon in the upper right and select Apps Script.
@@ -45,11 +51,13 @@ remembering to add a comma after the previous argument.
 1. Update lines 2-4 with details of the Secret you stored in Google Cloud Secret Manager.
 2. Update lines 5-8 with details of your RabbitSign document.
 3. On line 29, specify which Google Form question contains the respondent's name.
-4. If you collected the respondent's email using Google Forms' "Collect email addresses" feature, use line 33.
-5. If you collected the respondent's email manually (by creating a question), comment out line 33 and use line 35 instead.
+4. If you collected the respondent's email using Google Forms' "Collect email addresses" feature, uncomment line 33.
+5. If you collected the respondent's email manually (by creating a question), uncomment line 35 and modify it as required.
 6. Below line 39, map Google Form questions to RabbitSign fields.
-7. Submit the Google Form with a test response and use Apps Script's Execution log to debug.
+7. Submit some test responses to the Google Form and use Apps Script's Execution log to debug.
 8. All done!
+
+</details>
 
 ## Pricing
 - Google Forms & Apps Script: free.
