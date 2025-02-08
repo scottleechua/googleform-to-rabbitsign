@@ -6,6 +6,7 @@ Use [Apps Script](https://developers.google.com/apps-script) to fill and send a 
 
 ![A side-by-side image showing a filled Google Form on the left and the generated, filled-up form on the right with matching form details.](https://raw.githubusercontent.com/scottleechua/googleform-to-rabbitsign/main/assets/header.jpeg)
 
+You can examine the Apps Script code that powers this demo [here](/demo.gs).
 
 ## Requirements
 1. A completed [RabbitSign document template](https://www.rabbitsign.com/faq.html#templates). Note down the **sender field names**, **recipient's role name**, and the **template ID**.
