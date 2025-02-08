@@ -1,11 +1,13 @@
 # Google Form to RabbitSign
 
-Using [Google Apps Script](https://developers.google.com/apps-script), automatically fill and send a [RabbitSign template](https://www.rabbitsign.com/faq.html#templates) when a Google Form is submitted.
+A Google Apps Script that triggers when a Google Form is submitted, fills in a RabbitSign template, and sends the document out for signature.
+
+Use [Google Apps Script](https://developers.google.com/apps-script) to automatically fill and send a [RabbitSign templated document](https://www.rabbitsign.com/faq.html#templates) based on responses submitted to a Google Form.
 
 ## Requirements
 1. The template ID, sender field names, and recipient's role name of a RabbitSign template.
 2. A Google Form that collects the data to be injected into the RabbitSign template (required: name and email)
-3. [RabbitSign API credentials](https://www.rabbitsign.com/developerFaq.html) stored in [Google Cloud Secret Manager](https://cloud.google.com/security/products/secret-manager) in the format:
+3. [RabbitSign API credentials](https://www.rabbitsign.com/developer.html) stored in [Google Cloud Secret Manager](https://cloud.google.com/security/products/secret-manager) in the format:
 
 ```
 {"id":"<APIKEYID>","secret":"<APIKEYSECRET>"}
@@ -34,7 +36,7 @@ Saving the Trigger should, in turn, trigger an authentication flow to grant the 
 7. All done! Submit the Google Form with a test response and use Apps Script's Execution log to check error messages if needed.
 
 ## Pricing
-- [RabbitSign](https://www.rabbitsign.com/developerFaq.html): While the RabbitSign API is currently in public beta and therefore free, the official free tier is 100 "folders" (documents) / month, and 0.10 USD / folder thereafter.
+- [RabbitSign](https://www.rabbitsign.com/developer.html): While the RabbitSign API is currently in public beta and therefore free, the official free tier is 100 "folders" (documents) / month, and 0.10 USD / folder thereafter.
 - [Google Cloud Secret Manager](https://cloud.google.com/security/products/secret-manager?hl=en#pricing): the [Google Cloud Free Tier](https://cloud.google.com/free/docs/free-cloud-features#secret-manager) covers up to 6 secret versions and 10k access operations / month.
 - Google Forms & Apps Script: free.
 
