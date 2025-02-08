@@ -1,8 +1,8 @@
 // Update these variables:
-const TEMPLATE_ID = "REDACTED";
 const PROJECT_ID = "REDACTED";
 const SECRET_ID = "REDACTED";
 const SECRET_VERSION = 1;
+const TEMPLATE_ID = "REDACTED";
 const RECIPIENT_ROLE_NAME = "Superhero";
 const DOCUMENT_TITLE = "Google Form to RabbitSign Demo";
 const EMAIL_BODY = "This form has been pre-filled out based on your Google Form answers.";
