@@ -61,7 +61,7 @@ remembering to add a comma after the previous argument.
 
 ## Pricing
 - Google Forms & Apps Script: free.
-- RabbitSign: Free while in public beta; refer to the [Developer Page](https://www.rabbitsign.com/developer.html) for updated pricing.
+- RabbitSign: Up to 10 free documents created via API, and 0.10 USD per document thereafter. Refer to the [Developer Page](https://www.rabbitsign.com/developer.html).
 - Secret Manager: Up to 6 active secrets and 10k access operations free per month under the [Google Cloud Free Tier](https://cloud.google.com/free/docs/free-cloud-features#secret-manager).
 
 ## Acknowledgements
